@@ -226,18 +226,40 @@ img.vk{
   }
   img.back{
     max-width: 425px;
+    top: 40%;
     left: 0px;
   }
   img.inst{
-    left: 548px;
+    height: 141px;
+    width: 141px;
+    left: 282px;
+    top: 50%;
   }
   img.tg{
-    left: 274px;
+    height: 141px;
+    width: 141px;
+    left: 141px;
+    top: 50%;
   }
   img.vk{
+    height: 141px;
+    width: 141px;
     left: 0px;
+    top: 50%;
   }
-  
+  #pname{
+    left: calc(50% - 425px/2);
+  }
+  #social_name{
+    left: calc(50% - 425px/2);
+  }
+  #iam{
+    width: 425px;
+  }
+  #skills{
+    width: 425px;
+    font-size: 36px;
+  }
 }
 @media (min-width: 320px) and (max-width: 425px) {
   .photo{
@@ -250,16 +272,38 @@ img.vk{
   }
   img.back{
     max-width: 320px;
+    top: 40%;
     left: 0px;
   }
   img.inst{
-    left: 548px;
+    height: 106px;
+    width: 106px;
+    left: 112px;
+    top: 50%;
   }
   img.tg{
-    left: 274px;
+    height: 106px;
+    width: 106px;
+    left: 106px;
+    top: 50%;
   }
   img.vk{
+    height: 106px;
+    width: 106px;
     left: 0px;
+    top: 50%;
   }
-  
+  #pname{
+    left: calc(50% - 320px/2);
+  }
+  #social_name{
+    left: calc(50% - 320px/2);
+  }
+  #iam{
+    width: 320px;
+  }
+  #skills{
+    width: 320px;
+    font-size: 36px;
+  }
 }
