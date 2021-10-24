@@ -109,11 +109,13 @@ log_form.onsubmit=async (e)=>{
     console.log(data);
 }
 
-function checkPWD(){
-    var pwd1 = document.getElementById("pwd1").value;
-    var pwd2 = document.getElementById("pwd2").value;
-    if(pwd1.toLocaleString() > pwd2.toLocaleString() || pwd1.toLocaleString() < pwd2.toLocaleString()){
-        $(".error").html("Пароли не совпадают!");
-    }
-}
-
+document.addEventListener('DOMContentLoaded', function () {
+    var pass1 = document.querySelector('#pwd1'),
+    pass2 = document.querySelector('#pwd2')
+    pass1.addEventListener('input', function () {
+        this.value != pass2.value ? pass2.setCustomValidity('Password incorrect') : pass2.setCustomValidity('')
+    })
+    pass2.addEventListener('input', function (e) {
+        this.value != pass1.value ? this.setCustomValidity('Password incorrect') : this.setCustomValidity('')
+    })
+})    
