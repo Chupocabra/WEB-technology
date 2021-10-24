@@ -113,9 +113,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var pass1 = document.querySelector('#pwd1'),
     pass2 = document.querySelector('#pwd2')
     pass1.addEventListener('input', function () {
-        this.value != pass2.value ? pass2.setCustomValidity('Password incorrect') : pass2.setCustomValidity('')
+        this.value != pass2.value ? pass2.setCustomValidity('Пароли не совпадают') : pass2.setCustomValidity('')
     })
     pass2.addEventListener('input', function (e) {
-        this.value != pass1.value ? this.setCustomValidity('Password incorrect') : this.setCustomValidity('')
+        this.value != pass1.value ? this.setCustomValidity('Пароли не совпадают') : this.setCustomValidity('')
     })
 })    
+
+document.addEventListener('DOMContentLoaded', function () {
+    var pnoheHumber = document.querySelector('#phone');
+    pnoheHumber.addEventListener('input', function () {
+        this.value < 80000000000 || this.value > 89999999999  ? pnoheHumber.setCustomValidity('Номер не корректен'): this.setCustomValidity('')
+    })
+})  
+

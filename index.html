@@ -103,10 +103,10 @@
                 <form class="modal__reg" id="reg_window">
                     <fieldset>
                         <legend>РЕГИСТРАЦИЯ</legend>
-                        <p><label for="Имя">имя<input type="text" name="name" required></label></p>
+                        <p><label for="Имя">имя<input placeholder="русские буквы" pattern="[А-Яа-яЁё  -]+" type="text" name="name" required></label></p>
                         <p><label for="E-mail">email<input type="email" name="email" required></label></p>
-                        <p><label for="Телефон">телефон (необязательно)<input type="number" min=80000000000 max=89999999999></label></p>
-                        <p><label for="Пароль">пароль<input class="password" id="pwd1" type="password" name="pwd1" required></label></p>
+                        <p><label for="Телефон">телефон<input type="number" id="phone" required></label></p>
+                        <p><label for="Пароль">пароль<input placeholder="латинские буквы и цифры" class="password" pattern="(?=.*[a-z])[0-9a-zA-Z]{6,}" id="pwd1" type="password" name="pwd1" required></label></p>
                         <p><label for="Повторите пароль">повторите пароль<input class="password" id="pwd2" type="password" name="pwd2" required></label></p>    
                         <input type="checkbox" class="mycheckbox" id="personal" required>
                         <label for="personal">согласие на обработку персональных данных</label>               
