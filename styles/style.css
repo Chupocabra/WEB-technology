@@ -100,6 +100,8 @@ table{
   position: relative;
   width: 300px;
   height: 450px;
+  max-width: 100%;
+  max-height: 100%;
   margin: 2px 20px 15px 10px;
   background-position: right top;
   background-repeat: no-repeat;
@@ -262,4 +264,19 @@ table{
 
 .modal__reg fieldset input:valid:required{
   background-color: rgba(11, 117, 239, 0.1);
+}
+
+@media screen and (min-width: 600px) {
+  .body{
+    font-size: 24px;
+  }
+  .hmenu button{
+    font-size: 18px;
+  }
+  main{
+    margin: 0 10% 10% 10%;
+  }
+  .hmenu__box{
+    font-size: 18px;
+  }
 }
