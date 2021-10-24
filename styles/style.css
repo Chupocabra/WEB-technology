@@ -265,24 +265,3 @@ table{
 .modal__reg fieldset input:valid:required{
   background-color: rgba(11, 117, 239, 0.1);
 }
-
-@media (min-width: 400px) and (max-width: 800px) {
-  .body{
-    font-size: 24px;
-  }
-  .hmenu button{
-    font-size: 18px;
-  }
-  main{
-    margin: 0 10% 10% 10%;
-  }
-  .hmenu__box{
-    font-size: 18px;
-  }
-  .movies__item .img{
-    margin: 2px 10px 5px 10px;
-  }
-  .main__description{
-    font-size: 18px;
-  }
-}
